@@ -6,11 +6,12 @@ using RPG.Core;
 
 namespace RPG.Combat
 {
-    public class Fighter : MonoBehaviour , IAction
+    public class Fighter : MonoBehaviour, IAction
     {
         [SerializeField] float weaponRange = 2f;
         [SerializeField] float timeBetweenAttzcks = 1f;
-        
+        [SerializeField] float weaponDamage = 5f;
+
         Transform target;
         float timesSinceLastAttck = 0;
 
@@ -35,10 +36,18 @@ namespace RPG.Combat
         {
             if (timesSinceLastAttck > timeBetweenAttzcks)
             {
-              GetComponent<Animator>().SetTrigger("attack");
+                // This will trigger the Hit() event.
+                GetComponent<Animator>().SetTrigger("attack");
                 timesSinceLastAttck = 0;
-            } 
+            }
         }
+        //Animtion Event
+        void Hit()
+        {
+            Health healthComponent = target.GetComponent<Health>();
+            healthComponent.TakeDamage(weaponDamage);
+        }
+
 
         private bool GetIsInRange()
         {
@@ -50,16 +59,11 @@ namespace RPG.Combat
             GetComponent<ActionScheduler>().StartAction(this);
             target = combatTarget.transform;
         }
-        
+
         public void Cancel()
-        { 
-            target = null; 
-        }
-
-        //Animtion Event
-        void Hit()
         {
-
+            target = null;
         }
+
     }
 }
