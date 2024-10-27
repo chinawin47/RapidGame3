@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 5903683671992444150}
   - component: {fileID: 7816109491833146741}
   - component: {fileID: 3957863898977628842}
+  - component: {fileID: 6277495487982409751}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -93,6 +94,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
+  maxSpeed: 6
 --- !u!195 &700312150630479085
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -148,9 +150,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0de1850c25f3ea4399d6f68ee658dbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponRange: 2
   timeBetweenAttzcks: 1
-  weaponDamage: 5
+  handTransform: {fileID: 0}
+  defaultWeapon: {fileID: 0}
 --- !u!114 &7816109491833146741
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -175,4 +177,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9920b4c9096a29848a64804cf6e8e360, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
+  healthPoints: 100
+--- !u!136 &6277495487982409751
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1323300395582359833}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.35
+  m_Height: 2.43
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.96, z: 0}
