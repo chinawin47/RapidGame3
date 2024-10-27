@@ -11,7 +11,7 @@ PrefabInstance:
     - target: {fileID: 700312150630479085, guid: 812d2ca9bfc56b44f8bff73d78f8eb08,
         type: 3}
       propertyPath: m_Speed
-      value: 5.66
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1323300395582359833, guid: 812d2ca9bfc56b44f8bff73d78f8eb08,
         type: 3}
@@ -160,6 +160,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   chaseDistance: 5
   suspicionTime: 5
+  patrolPath: {fileID: 0}
+  waypointTolerance: 1
+  waypointDwellTime: 3
+  patrolSpeedFraction: 0.2
 --- !u!1001 &8021947316719509501
 PrefabInstance:
   m_ObjectHideFlags: 0
