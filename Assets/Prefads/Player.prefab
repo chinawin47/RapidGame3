@@ -136,6 +136,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 22100000, guid: e319cc5b18fff794586d9170ea257f5c,
         type: 2}
+    - target: {fileID: 5903683671992444150, guid: 812d2ca9bfc56b44f8bff73d78f8eb08,
+        type: 3}
+      propertyPath: leftHandTransform
+      value: 
+      objectReference: {fileID: 674047152322561147}
+    - target: {fileID: 5903683671992444150, guid: 812d2ca9bfc56b44f8bff73d78f8eb08,
+        type: 3}
+      propertyPath: rightHandTransform
+      value: 
+      objectReference: {fileID: 5391787652863602288}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -364,6 +374,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 36b3d249698d3a6409a24079795e0863, type: 3}
+--- !u!4 &674047152322561147 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6502182839619065283, guid: 36b3d249698d3a6409a24079795e0863,
+    type: 3}
+  m_PrefabInstance: {fileID: 6009726631842566584}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5391787652863602288 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1852576806548013000, guid: 36b3d249698d3a6409a24079795e0863,
