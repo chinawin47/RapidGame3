@@ -78,7 +78,6 @@ namespace RPG.Combat
             {
                 target.TakeDamage(curreentWeapon.GetDamage());
             }
-            target.TakeDamage(curreentWeapon.GetDamage());
         }
 
         void Shoot()
