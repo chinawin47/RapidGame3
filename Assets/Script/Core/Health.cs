@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace RPG.Core
 {
@@ -31,6 +32,16 @@ namespace RPG.Core
             isDead = true;
             GetComponent<Animator>().SetTrigger("die");
             GetComponent<ActionScheduler>().CancelCurrentAction();
+            
+            if (gameObject.tag == "Boss")
+            {
+                SceneManager.LoadScene(2);
+            }
+
+            if (gameObject.tag == "Player")
+            {
+                SceneManager.LoadScene(3);
+            }
         }
 
         void Update()
