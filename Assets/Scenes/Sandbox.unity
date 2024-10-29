@@ -7575,6 +7575,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Boss
       objectReference: {fileID: 0}
+    - target: {fileID: 2111915911597225297, guid: 0e7276895cc7ddf43b386e727542f3fa,
+        type: 3}
+      propertyPath: m_TagString
+      value: Boss
+      objectReference: {fileID: 0}
     - target: {fileID: 2404450725682777889, guid: 0e7276895cc7ddf43b386e727542f3fa,
         type: 3}
       propertyPath: m_Height
