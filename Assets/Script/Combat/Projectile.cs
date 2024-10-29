@@ -10,20 +10,22 @@ namespace RPG.Combat
         [SerializeField] float speed = 1;
         Health target = null;
         float damage = 0;
+        Vector3 direction;
 
         // Update is called once per frame
         void Update()
         {
-            if (target == null) return;
-
-            transform.LookAt(GetAimLocation());
-            transform.Translate(Vector3.forward * speed * Time.deltaTime);
+            transform.Translate(direction * speed * Time.deltaTime, Space.World);
         }
 
         public void SetTarget(Health target, float damage) 
         {
             this.target = target;
             this.damage = damage;
+            direction = (GetAimLocation() - transform.position).normalized;
+            
+            // Rotate the projectile to face the initial direction
+            transform.rotation = Quaternion.LookRotation(direction);
         }
 
         private Vector3 GetAimLocation()
@@ -42,6 +44,5 @@ namespace RPG.Combat
             target.TakeDamage(damage);
             Destroy(gameObject);
         }
-
     }
 }
