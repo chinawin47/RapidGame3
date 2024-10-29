@@ -8755,7 +8755,7 @@ PrefabInstance:
     - target: {fileID: 4179180856504094434, guid: 0e7276895cc7ddf43b386e727542f3fa,
         type: 3}
       propertyPath: healthPoints
-      value: 60.9
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 6344553747928212575, guid: 0e7276895cc7ddf43b386e727542f3fa,
         type: 3}
@@ -8781,7 +8781,7 @@ PrefabInstance:
         type: 3}
       propertyPath: defaultWeapon
       value: 
-      objectReference: {fileID: 11400000, guid: 406066b4d0ec55d499122228fed075c1,
+      objectReference: {fileID: 11400000, guid: 39fd59c93ea87604a8b06ae73f0aae1d,
         type: 2}
     - target: {fileID: 6844450960455981246, guid: 0e7276895cc7ddf43b386e727542f3fa,
         type: 3}
