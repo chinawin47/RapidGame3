@@ -9,12 +9,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 57eae33d47d351e4494c3eb1efba5be0, type: 3}
-  m_Name: Unarmed 1
+  m_Script: {fileID: 11500000, guid: bfda56da833e2384a9677cd3c976a436, type: 3}
+  m_Name: Cutscene1
   m_EditorClassIdentifier: 
-  equippedPrefad: {fileID: 0}
-  animatorOverride: {fileID: 0}
-  weaponDamage: 22.5
-  weaponRange: 2
-  isRightHanded: 1
-  projectile: {fileID: 0}
+  m_Version: 0
+  m_Tracks: []
+  m_FixedDuration: 0
+  m_EditorSettings:
+    m_Framerate: 60
+    m_ScenePreview: 1
+  m_DurationMode: 0
+  m_MarkerTrack: {fileID: 0}
